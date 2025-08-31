@@ -1,0 +1,53 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Upload directories (keep structure but ignore content)
+uploads/audio/*
+!uploads/audio/.gitkeep
+uploads/images/*
+!uploads/images/.gitkeep
+
+# Config files with sensitive data
+# config/config.php (uncomment this line if you want to exclude config.php from git)
+
+# Node modules (if any)
+node_modules/
+
+# Vendor directory (if using Composer)
+vendor/
+
+# Cache directories
+cache/
+tmp/
+
+# Backup files
+*.bak
+*.backup

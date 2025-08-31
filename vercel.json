@@ -1,0 +1,27 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*\\.php)$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(css|js|images|uploads)/(.*)",
+      "dest": "/$1/$2"
+    },
+    {
+      "src": "/",
+      "dest": "/index.php"
+    }
+  ],
+  "env": {
+    "DB_HOST": "@db_host",
+    "DB_USER": "@db_user", 
+    "DB_PASS": "@db_pass",
+    "DB_NAME": "@db_name"
+  }
+}
